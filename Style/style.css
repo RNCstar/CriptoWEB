@@ -1,0 +1,374 @@
+@import url(mediaQuery.css);
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+header {
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+#menu_bar {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#menu_bar ul li {
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+#menu_bar ul li:hover {
+    cursor: pointer;
+    color: rgb(248, 181, 0);
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+#menu_bar ul li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: red;
+    transition: width 0.7s ease-in-out;
+}
+
+#menu_bar ul li:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgb(248, 181, 0);
+    background: linear-gradient(94deg, rgba(248, 181, 0, 1) 49%, rgba(255, 0, 0, 1) 100%);
+    width: 100%;
+    height: 5px;
+}
+
+#menu_bar ul {
+    display: none;
+}
+
+/* menu item at Mobile */
+
+
+.hiddenItems {
+    display: none !important;
+}
+
+
+svg:hover {
+    color: rgb(248, 181, 0);
+    cursor: pointer;
+}
+
+
+#menu_bar_mobile ul {
+    margin-top: 20px;
+}
+
+#menu_bar_mobile ul li {
+    padding: 10px 0;
+    position: relative;
+
+}
+
+#menu_bar_mobile ul li:hover {
+    font-weight: bold;
+    color: rgb(248, 181, 0);
+    cursor: pointer;
+}
+
+#menu_bar_mobile ul li:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: black;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+    left: 0;
+}
+
+#menu_bar_mobile ul li:hover:after {
+    width: 100%;
+}
+
+/* menu item at Mobile */
+#menu_bar_mobile {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    z-index: 100;
+}
+
+
+#menu_bar_mobile.showNav ul li {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+#menu_bar_mobile ul li {
+    transform: translateX(-130%);
+    transition: transform 0.5s ease;
+}
+
+
+/* ======================= */
+/* finish header */
+/* ======================= */
+/* Main Start */
+.introD {
+    display: none;
+}
+
+.introD {
+    color: #fff;
+
+}
+
+.introD h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.article1 {
+    height: 400px;
+    background-image: url(../Images/slider-1-1200x900.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: end;
+}
+
+.introD article {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.article1 .bg-imgDark {
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.article1 .content {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+
+}
+
+/* article 2  */
+
+.article2 {
+    height: 190px;
+    background-image: url(../Images/slider-2-450x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: end;
+}
+
+.article2 .bg-imgDark {
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.article2 .content {
+    position: absolute;
+    bottom: 40px;
+    left: 31px;
+
+}
+
+.article2 h2 {
+    font-size: 20px;
+}
+
+/* article 3  */
+
+.article3 {
+    height: 190px;
+    background-image: url(../Images/slider-3-450x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: end;
+}
+
+.article3 .bg-imgDark {
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.article3 .content {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+
+}
+
+.article3 h2 {
+    font-size: 20px;
+}
+
+/* articles Mobile site */
+
+.articleM {
+    height: 300px;
+    width: 100%;
+    /* margin: 0 20px; */
+}
+
+/* m1 */
+.articleM1 {
+    background-image: url(../Images/banner-1-600x450.jpg);
+    /* height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+.articleM1 .bg-imgDark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+}
+
+.articleM1 .content {
+    bottom: 30px;
+    left: 20px;
+    right: 10px;
+    position: absolute;
+    color: #fff;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+/* m2 */
+
+/* m1 */
+.articleM2 {
+    background-image: url(../Images/slider-2-450x600.jpg);
+    /* height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+.articleM2 .bg-imgDark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+}
+
+.articleM2 .content {
+    bottom: 30px;
+    left: 20px;
+    right: 10px;
+    position: absolute;
+    color: #fff;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+/* m3 */
+.articleM3 {
+    background-image: url(../Images/slider-3-450x600.jpg);
+    /* height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+.articleM3 .bg-imgDark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+}
+
+.articleM3 .content {
+    bottom: 30px;
+    left: 20px;
+    right: 10px;
+    position: absolute;
+    color: #fff;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+/* scroll to down for menu mobile */
+.introM {
+    transition: transform 0.5s;
+}
+
+.introM.showNav {
+    transform: translateY(25%);
+}
