@@ -5,6 +5,10 @@
     font-size: 14px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     overflow-x: hidden;
 }
@@ -371,4 +375,43 @@ svg:hover {
 
 .introM.showNav {
     transform: translateY(25%);
+}
+
+
+/* main Center */
+#center_big_img {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.uneder_content_img {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    transition: color 0.5s ease;
+    display: inline-block;
+    /* margin-left: 20px; */
+    margin-top: 15px;
+}
+
+.underTitle {
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+.underTitle:hover {
+    color: #F9B500;
+}
+
+.uneder_content_img:hover {
+    color: #F9B500;
+    cursor: pointer;
+}
+
+.leftCite p {
+    font-weight: 400;
+    font-size: 13px;
+    /* margin-left: 20px; */
+    width: 90%;
+    margin-bottom: 30px;
 }

@@ -31,6 +31,49 @@
         padding: 0 50px;
     }
 
+    #center_big_img {
+        height: 580px;
+        width: 775px;
+        /* margin-left: 10px; */
+    }
+
+    #center_main h2 {
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #center_main .underTitle {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .underTitle::after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+        left: 5px;
+        top: 50px;
+        height: 1px;
+        border-top: 2px solid #ccc;
+        padding: 0 50px;
+        /* mar */
+        z-index: 100;
+    }
+
+    .underTitle::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        bottom: 0;
+        left: 5px;
+        top: 46px;
+        height: 1px;
+        border-top: 5px solid #F9B500;
+        padding: 0 50px;
+        z-index: 200;
+    }
+
 
 
 }
@@ -52,7 +95,7 @@
 
     header img {
         width: 120px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
 
     }
 
