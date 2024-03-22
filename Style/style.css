@@ -415,3 +415,7 @@ svg:hover {
     width: 90%;
     margin-bottom: 30px;
 }
+
+.lastBoxImg img {
+    border-radius: 25px;
+}

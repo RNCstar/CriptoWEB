@@ -74,6 +74,11 @@
         z-index: 200;
     }
 
+    .lastUnderContentImg {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
 
 
 }
