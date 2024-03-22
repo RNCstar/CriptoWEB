@@ -419,3 +419,30 @@ svg:hover {
 .lastBoxImg img {
     border-radius: 25px;
 }
+
+.bitValue {
+    background-color: #F9B500 !important;
+    padding: 15px 5px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: #000 1px 1px 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bitValue:hover {
+    color: #fff;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: none;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.boxlittleright img {
+    border-radius: 100%;
+
+}
+
+.boxlittleright {
+    cursor: pointer;
+}

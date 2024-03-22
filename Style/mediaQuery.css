@@ -80,7 +80,25 @@
         margin-bottom: 50px;
     }
 
+    .rightTitleImg {
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 
+    .rightTitleImg:hover {
+        color: #F9B500;
+        /* font-size: larger; */
+        font-weight: bolder;
+    }
+
+    .boxlittleright {
+        margin-bottom: 20px;
+        background-color: #e6e5e3;
+        padding: 10px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
 }
 
 /* =========================================== */
