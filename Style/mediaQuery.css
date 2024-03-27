@@ -104,6 +104,13 @@
     .bitValue {
         margin-left: 15px;
     }
+
+    #lastPRight {
+        margin-left: 15px;
+        /* width: 90%; */
+        /* font-size: 14px; */
+        /* font-weight: bolder; */
+    }
 }
 
 /* =========================================== */
