@@ -111,6 +111,42 @@
         /* font-size: 14px; */
         /* font-weight: bolder; */
     }
+
+    .styleFormMain {
+        margin-left: 15px;
+    }
+
+    .styleFormMain button {
+        transition: color 0.3s ease-in-out;
+    }
+
+    .styleFormMain button:hover {
+        color: #F9B500;
+    }
+
+    .styleFormMain input {
+        border: 1px solid #F9B500;
+        width: 80%;
+        padding: 10px 5px;
+        border-radius: 8px 0 0px 8px;
+    }
+
+    .styleFormMain button {
+        border: 1px solid #F9B500;
+        border-left: none;
+        border-radius: 0px 8px 8px 0px;
+        /* pad */
+        font-size: 20px;
+        padding: 5.5px 15px;
+    }
+
+    .styleFormMain i {
+        font-size: 20px;
+    }
+
+    .newsletter {
+        margin-top: 30px;
+    }
 }
 
 /* =========================================== */
