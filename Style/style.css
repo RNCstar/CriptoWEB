@@ -446,3 +446,20 @@ svg:hover {
 .boxlittleright {
     cursor: pointer;
 }
+
+#menu_bar img {
+    margin-left: 10px;
+}
+
+.styleFormMain {
+    margin-bottom: 20px;
+}
+
+.imgFooter {
+    width: 200px;
+    margin: 20px 20px;
+}
+
+.p-footer {
+    margin-left: 30px;
+}
